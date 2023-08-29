@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+.hide {
+    display: none;
+}
+
+body {
+    background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+    animation: gradient 10s ease infinite;
+    background-size: 300% 300%;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    place-items: center;
+
+    color: #34355B;
+}
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+main {
+    width: min(42.8rem, 90%);
+
+    padding: 4.8rem 6.4rem 6.4rem; 
+    margin-top: -8rem;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: normal;
+
+    text-align: center;
+}
+
+/*Screen1*/
+h1 {
+    width: 25.8rem;
+}
+
+.screen1 p {
+    margin-top: 1.4rem;
+    margin-bottom: 2rem;
+
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#closedCookie:hover {
+    animation: shake 1s linear infinite; 
+    cursor: pointer;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-5px);
+    }
+
+    20%, 40%, 60%, 80% {
+        transform: translateX(5px);
+    }
+}
+
+/*Screen2*/
+.note {
+    background: #E4EDF1;
+    box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+
+    width: 29.3rem;
+    height: 10.7rem;
+
+    padding: 1rem;
+    margin: 1.7rem 0 1.7rem;
+
+    display: grid;
+    place-items: center;
+
+    animation: noteUp 1.2s ease-in-out;
+}
+
+#message {
+    color: #000;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+button {
+
+    border-radius: .4rem;
+    background: #FF9500;
+
+    padding: 1.6rem;
+    margin-top: 1.7rem;
+
+    border: none;
+    cursor: pointer;
+
+    color: #FFF;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+}
+
+@keyframes noteUp {
+    0% {
+        transform: translateY(150px) scale(0.1);
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
